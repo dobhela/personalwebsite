@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: rgb(222, 138, 255);
+    --text-color: rgba(255, 255, 255, 1);
+    --subtext-color: rgba(255, 255, 255, 0.7);
+    --background-color: rgba(0, 0, 0, 1);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-container {
+    flex-basis: 100%;
+}
+
+.main-header {
+    color: var(--text-color);
+    font-size: 5.5rem;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.header-subtext {
+    color: var(--subtext-color);
+    font-size: 2.5rem;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.main-color {
+    color: var(--main-color)
+}
