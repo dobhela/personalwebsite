@@ -1,3 +1,10 @@
-# personalwebsite
-My personal website
+<img src="./README.svg">
+
+*huge thanks to Exerra for letting me yoink the SVG*
+
+# Personal Website
+
+This website is currently a placeholder, while I make an actually decent website.
+
+Made using raw HTML and CSS, because I couldn't bother making such a simple website with React.
 
