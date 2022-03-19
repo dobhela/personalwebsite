@@ -1,6 +1,6 @@
 <img src="./README.svg">
 
-*huge thanks to Exerra for letting me yoink the SVG*
+*huge thanks to the mighty Exerra for letting me yoink the SVG*
 
 # Personal Website
 
