@@ -1,4 +1,4 @@
-c function handleRequest(request) {
+function handleRequest(request) {
     let resp = await fetch(request.url, request);
   
     let newResp = new Response(resp.body, {
