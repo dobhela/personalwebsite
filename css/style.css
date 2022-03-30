@@ -1,16 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;500;600;700;800;900&display=swap');
 
 :root {
+    --navHeight: 70px;
     --main-color: rgb(222, 138, 255);
-    --text-color: rgba(255, 255, 255, 1);
-    --subtext-color: rgba(255, 255, 255, 0.7);
-    --background-color: rgba(0, 0, 0, 1);
+    --subtxt-color: rgba(255, 255, 255, 0.7);
+    --txt-color: rgb(255, 255, 255);
+    --bg-color: rgba(0, 0, 0, 1);
+}
+
+.light-mode {
+    --subtxt-color: rgba(0, 0, 0, 0.7);
+    --txt-color: rgb(0, 0, 0);
+    --bg-color: rgb(255, 255, 255);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
+    transition: 0.5s;
+}
+
+.switch {
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+  
+.switch div {
+    position: relative;
+    display: block;
+    background: rgb(224, 224, 224);
+    width: 50px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+  
+.switch input {
+    display: none;
+}
+  
+.slider {
+    background-color: #999;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+}
+  
+input:checked + .slider {
+transform: translateX(28px);
 }
 
 .container {
@@ -25,7 +72,7 @@ body {
 }
 
 .main-header {
-    color: var(--text-color);
+    color: var(--txt-color);
     font-size: 5.5rem;
     font-family: 'Catamaran', sans-serif;
     font-weight: 600;
@@ -36,7 +83,7 @@ body {
 }
 
 .header-subtext {
-    color: var(--subtext-color);
+    color: var(--subtxt-color);
     font-size: 2.5rem;
     font-family: 'Catamaran', sans-serif;
     font-weight: 300;
@@ -57,27 +104,11 @@ body {
     width: 100%;
 }
 
-.tooltip {
-    color: var(--subtext-color);
-    font-size: 1rem;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 300;
-    display: block;
-    margin: 0;
-}
-
-.contact-image {
-    margin: 1vw;
-}
-
 @media only screen and (max-width: 700px) {
     .main-header {
         font-size: 2.5rem;
     }
     .header-subtext {
         font-size: 1rem;
-    }
-    .contact-image {
-        width: 32px;
     }
 }
