@@ -4,7 +4,7 @@
   "description": "<img src=\"./README.svg\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cp -R ./node_modules/fork-corner ./js/"
   },
   "repository": {
     "type": "git",
