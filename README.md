@@ -6,5 +6,4 @@
 
 This website is currently a placeholder, while I make an actually decent website.
 
-Made using raw HTML and CSS, because I couldn't bother making such a simple website with React.
-
+Made using HTML and CSS, JS.
